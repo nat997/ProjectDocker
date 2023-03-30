@@ -17,4 +17,4 @@ jobs:
     - name: Start Docker Compose
       run: docker-compose up -d 
     - name: Execute PHP test
-      run: docker exec -it exo_devops_php php test.php
+      run: docker exec exo_devops_php php test.php
