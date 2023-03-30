@@ -18,7 +18,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: username/repo:latest
+        tags: nat997/my-docker-repo:latest
 
     - name: Run unit tests
       run: |
