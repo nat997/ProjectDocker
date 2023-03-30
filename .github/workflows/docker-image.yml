@@ -18,3 +18,7 @@ jobs:
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: Start Docker Compose
       run: docker-compose up -d
+    - name: Pull and test the Docker image
+      run: |
+        docker pull my-registry/my-repo:my-tag
+        docker run --rm my-registry/my-repo:my-tag echo "Hello, world!"
